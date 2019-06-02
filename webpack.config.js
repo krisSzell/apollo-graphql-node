@@ -20,7 +20,8 @@ module.exports = {
 			"@interfaces": path.resolve(__dirname, "src/interfaces/"),
 			"@repositories": path.resolve(__dirname, "src/repositories/"),
 			"@errors": path.resolve(__dirname, "src/errors/"),
-			"@dataSources": path.resolve(__dirname, "src/dataSources/")
+			"@dataSources": path.resolve(__dirname, "src/dataSources/"),
+			"@resolvers": path.resolve(__dirname, "src/resolvers/")
 		}
 	},
 	module: {

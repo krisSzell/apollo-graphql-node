@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
-import { ApolloServer } from "apollo-server";
+import { ApolloServer, IResolvers } from "apollo-server";
 import { typeDefs } from "@typeDefs/index";
+import { resolvers } from "@resolvers/index";
+import { dataSources } from "@dataSources/index";
+
+
+
 require("custom-env").env(true);
 
 const { MONGO_DB_CONNECTION = "", PORT = 8080 } = process.env;
@@ -8,7 +13,7 @@ const { MONGO_DB_CONNECTION = "", PORT = 8080 } = process.env;
 // import { connectionString } from "./secrets";
 // const { PORT = 8080 } = process.env;
 
-const server = new ApolloServer({ typeDefs });
+const server = new ApolloServer({ typeDefs, resolvers, dataSources });
 
 server.listen().then(({ url }) => {
 	console.log(`🚀 Server ready at ${url}`);

@@ -17,7 +17,8 @@
 			"@controllers/*": ["controllers/*"],
 			"@repositories/*": ["repositories/*"],
 			"@errors/*": ["errors/*"],
-			"@dataSources/*": ["dataSources/*"]
+			"@dataSources/*": ["dataSources/*"],
+			"@resolvers/*": ["resolvers/*"]
 		} /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */,
 		"typeRoots": [
 			"node_modules/@types/"
