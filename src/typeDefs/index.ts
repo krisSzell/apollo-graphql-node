@@ -1,4 +1,4 @@
-import { gql } from "apollo-server";
+import { gql } from "apollo-server-express";
 import { user } from "./user";
 import { income } from "@typeDefs/income";
 import { expense } from "@typeDefs/expense";

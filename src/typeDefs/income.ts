@@ -1,11 +1,11 @@
-import { gql } from "apollo-server";
+import { gql } from "apollo-server-express";
 
 export const income = gql`
 	type Income {
 		id: ID!
 		budgetId: String!
 		value: Int!
-		createdAt: Int!
+		createdAt: Float!
 		comment: String
 	}
 	extend type Query {

@@ -1,11 +1,13 @@
 import { Request } from "express";
+
 export interface IIncome {
-    budgetId: string;
-    value: number;
-    createdAt?: Date;
-    comment?: string;
+	id?: any;
+	budgetId: string;
+	value: number;
+	createdAt?: number;
+	comment?: string;
 }
 
 export interface IIncomeRequest extends Request {
-    body: IIncome;
+	body: IIncome;
 }
